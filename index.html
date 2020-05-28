@@ -60,8 +60,10 @@
     <div id="lead">
         <div id="lead-content">
             <h1>Sagar Toms</h1>
-            <h2>Software Engineer</h2>
+            <!--h2>Software Engineer</h2-->
+            <h2><span id="typed"></span></h2>
             <a href="files/Sagar_Resume.pdf" class="btn-rounded-white">Download Resume</a>
+
         </div>
         <!-- End #lead-content -->
 
@@ -205,7 +207,7 @@
             <li><a href="https://www.coursera.org/account/accomplishments/certificate/G4FFY8FQ5MYJ"><img src="files/dl_cert.png" width=200 height=180 class="img-thumbnail" /></a></li>
             <li><a href="https://www.coursera.org/account/accomplishments/certificate/LPMGP9A46ZGD"><img src="files/gcp_cert.png" width=200 height=180 class="img-thumbnail" /></a></li>
             -->
-        </ul-->
+        <!--/ul-->
         <h2 class="heading">Skills</h2>
         <ul>
             <li>Python</li>
@@ -234,13 +236,16 @@
             <div class="row">
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="files/python.png"  width="250" height="200"/>
+                        <img src="files/python.jpg"  width="250" height="200"/>
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>HackerRank Python (Basic)</h3>
+                        <h3>Python (Basic)</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                            May 2020, by HackerRank
+                        </p>
+                        <p>
+                            It covers topics like Scalar Types, Operators and Control Flow, Strings, Collections and Iteration, Modularity, Objects and Types and Classes.
                         </p>
                         <a href="https://www.hackerrank.com/certificates/6ba6714108ac">View Certificate</a>
                     </div>
@@ -250,13 +255,16 @@
 
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="files/prob.png"  width="250" height="200"/>
+                        <img src="files/prob.jpg"  width="250" height="200"/>
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>HackerRank Problem Solving (Basic)</h3>
+                        <h3>Problem Solving (Basic)</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                            May 2020, by HackerRank
+                        </p>
+                        <p>
+                            It covers basic topics of Data Structures (such as Arrays, Strings) and Algorithms (such as Sorting and Searching).
                         </p>
                         <a href="https://www.hackerrank.com/certificates/c8c3ab978164">View Certificate</a>
                     </div>
@@ -272,8 +280,10 @@
                     <div class="project-info">
                         <h3>Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                            May 2020, by Coursera
                         </p>
+                        <p>Helped to learn best practices for using TensorFlow, a popular open-source machine learning framework</p>
+
                         <a href="https://www.coursera.org/account/accomplishments/certificate/G4FFY8FQ5MYJ">View Certificate</a>
                     </div>
                     <!-- End .project-info -->
@@ -288,7 +298,10 @@
                     <div class="project-info">
                         <h3>Google Cloud Platform Big Data and Machine Learning Fundamentals</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                            May 2020, by Coursera
+                        </p>
+                        <p>
+                            Helped to learn processing big data at scale for analytics and machine learning.
                         </p>
                         <a href="https://www.coursera.org/account/accomplishments/certificate/LPMGP9A46ZGD">View Certificate</a>
                     </div>
@@ -304,7 +317,7 @@
     <div id="contact">
         <h2>Get in Touch</h2>
         <div id="contact-form">
-            <form method="POST" action="https://formspree.io/email@email.com">
+            <form method="POST" action="https://formspree.io/sagartoms@gmail.com">
                 <input type="hidden" name="_subject" value="Contact request from personal website" />
                 <input type="email" name="_replyto" placeholder="Your email" required>
                 <textarea name="message" placeholder="Your message" required></textarea>
@@ -348,6 +361,16 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
+
+    <script src="js/typed.js"></script>
+    <script>
+        var typed = new Typed('#typed', {
+            strings: ['Software Engineer', 'Python Developer', 'Azure Developer'],
+            loop: true,
+            typeSpeed: 50,
+            backSpeed: 30
+        });
+    </script>
 </body>
 
 </html>
